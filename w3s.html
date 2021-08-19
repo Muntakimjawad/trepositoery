@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> photo gallery</title>
+    <style>
+        .gallary{
+            width:400px;
+            float:left;
+            margin:  5px;
+            border:1px solid black;
+           
+        }
+        .photo-container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            justify-content:  space-between;
+        }
+        .desc{
+            padding: 10px;
+            margin-top: 10px;
+        }
+        @media only screen and (max-width: 900px) {
+   .photo-container{
+    grid-template-columns:repeat(2,1fr);
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .photo-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+    </style>
+
+</head>
+<body>
+    <div class=" photo-container">
+        <div class="gallary">
+            <a target="_blank" href="OIP.jfif">
+                <img src="OIP.jfif" height="400px" >
+                </a>
+                <div class="desc">demo for future apartment</div>
+        </div>
+        <div class="gallary">
+            <a target="_blank" href="R.jfif" >
+                <img src=" R.jfif "  height="400px" width="400px" >
+                </a>
+                <div class="desc">demo for future apartment</div>
+        </div>
+        <div class="gallary">
+            <a target="_blank" href="OIP.jfif">
+                <img src="OIP.jfif" height="400px" >
+                </a>
+                <div class="desc">demo for future apartment</div>
+        </div>
+        <div class="gallary">
+            <a target="_blank" href="R.jfif ">
+                
+                <img src= "R.jfif" height="400px" width="400px">
+               
+                </a>
+                <div class="desc">demo for future apartment</div>
+        </div>
+       
+    </div>
+</body>
+</html>

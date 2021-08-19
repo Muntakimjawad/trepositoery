@@ -1,0 +1,217 @@
+ 
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <style>
+ 
+#form{
+border :1px solid black;
+ padding: 20px;
+width :1000px;
+margin : 0 auto;
+ background-color: pink;
+ border-radius: 8px;
+}
+body{
+    background-color:rgb(187, 83, 83);
+     
+      
+}
+ header{
+     
+     text-align: center;
+ }
+ input[type=text],input[type=number], select{
+     width:60%;
+     padding: 10px;
+     margin:5px 5px;
+      border:none;
+      border-bottom: 2px solid black;
+     display: inline-block;
+     outline:none;
+     float: right;
+ }
+ textarea{
+     width: 80%;
+     border-radius: 5px;
+     padding: 12px 20px;
+     resize: vertical;
+     float:right;
+ }
+ label{
+     text-align: left;
+     padding: 12px 12px 12px 0;
+  display: inline-block;
+ }
+ .container{
+     font-size: 30px;
+     padding: 20px;
+     display: table;
+     clear:both;
+     margin: 0 auto;
+ }
+ input[type=submit],input[type=reset]{
+    width:90%;
+     padding: 10px;
+     margin:5px 5px;
+     box-sizing: border-box;
+     border-radius: 5px;
+     display: inline-block;
+     background-color: green;
+     cursor: pointer;
+     border:none;
+ }
+  .cell1{
+      width:25%;
+      float: left;
+      margin:5px;
+  }
+  .cell11{
+      width:75%;
+      float: left;
+      margin:5px;
+  }
+ footer{
+     text-align: center;
+ }
+ @media screen and (max-width:600px){
+     .container,#form{
+        width: 90%;
+    }
+ }
+ input[type=radio]{
+     float:center;
+     width: 45%;
+ }
+    </style>
+</head>
+<body a link="black" vlink="black">
+    <div class="container">
+        <header>
+            Feel free to ask any kind of information related to our service.our contacts ...<br>
+            mobile :01819092044<br>
+            facebook id :md Harun Ar Rashid(owner)<br>
+            <br>
+            <br>
+            <br>
+            please fill the form below so that we can contact you later .<br>
+            <br>
+            If you have any suggestions please inform us below!
+        </header>
+       
+        <main>
+            <div id="form">
+                <h2>CONTACT-BOX!</h2>
+        <form method="post" action="process.php">
+            <div class="row">
+                <div class="cell1">
+                    <label for="fname">FRISTNAME:</label>
+                </div>
+                <div class="cell11">
+                    <input type="text" id="fname" name="fristname" placeholder="your frist name.."><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="cell1">
+                    <label for="lname">LASTNAME:</label>
+                </div>
+                <div class="cell11">
+                    <input type="text" id="lname" name="lastname" placeholder="your last name..">
+                </div>
+            </div>
+        <div class="row">
+            <div class="cell1">
+                <label for="adrs"> ADRESS:</label>
+            </div>
+            <div class="cell11">
+                <input type="text" id="adrs" name="adress" placeholder="your adress.."><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell1">
+                <label for="dis">  DISTRICT:</label>
+            </div>
+            <div class="cell11">
+                <input type="text" id="dis" name=" district" placeholder="your  district.."><br>
+            </div>
+        </div>
+       <div class="row">
+           <div class="cell1">
+            <label for="age"> AGE:</label>
+           </div>
+           <div class="cell11">
+            <input type="number" id="age" name="age" placeholder="your age.."><br>
+           </div>
+       </div>
+      <div class="row">
+          <div class="cell1">
+            relationship status: 
+          </div>
+          <div class="cell11">
+    <input type="radio" name="relationship status" id="r_s" value="married"/>
+    <label for="r_s">married</label>
+    <input type="radio" name="relationship status" id="r_s"  value="unmarried"/>
+    <label for="r_s">unmarried</label> 
+          </div>
+      </div>
+        <div class="row">
+            <div class="cell1">
+                <label for="js">Job place:</label>
+            </div>
+            <div class="cell11">
+                <input type="text" id="js" name="job place"/>
+            </div><br>
+        </div>
+        <div class="row">
+            <div class="cell1">
+                <label for="ls"> LOOKING FOR:</label> 
+            </div>
+            <div class="cell11">
+                <select name="type"><br>
+                <option value="type" id="ls">invesment</option><br>
+                <option value="type" id="ls">rent</option><br>
+                </select>
+            </div>
+        </div>
+        <div class="row"> 
+            <div class="cell1">
+                <label><b>please enter your opinion here</b></label> 
+        
+            </div>
+     
+            <div class="cell11">
+                <textarea name="massage body" rows="20" cols="100">dear,</textarea> 
+            </div>
+        </div>
+       <div class="row">
+           <div class="cell11">
+            <input type="submit" name="send email"/>
+           </div>
+       </div>
+       <div class="row">
+           
+            <input type="reset" name="reset">
+            
+       </div>
+          
+        
+        </form>
+        </div>
+        </main>
+        <footer>
+            <a href="index.html">home</a>|<a href="about.html"> about</a>|<a href="news.html"> news</a>|<b> contract</b>
+        </footer>
+        
+    </div>
+        
+        
+        
+        
+         
+</body>
+</html>

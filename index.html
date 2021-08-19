@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>home</title>
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+		body{
+		background-image:url("OIP.jfif");
+		font-family:Arial;
+		font-size:24;
+		background-size:cover;
+		color:white;
+		alink:white;
+		v link:white;
+		opacity: 0.8;
+		
+	}
+	header{
+		color: aqua;
+		font-size: 30px;
+		text-align: center;
+	}
+	p{
+		color: blue;
+	}
+	.dropdown a{
+		 text-decoration: none;
+		 font-size: 20px;
+		 color: white;
+		 padding: 30px;
+		 cursor: pointer;
+	}
+	.dropdown-container{
+		display:inline;
+		position: relative;
+		padding: 30px;
+	}
+	.dropdown-content {
+	 display: none;
+	position: absolute;
+	background-color: black;
+	top: 80px;
+	left: 50px;
+	}
+	.dropdown-content a{
+		display: block;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		 
+	}
+	.dropdown-content a:hover{
+		display: block;
+		background-color:green ;
+	}
+	 .dropdown{
+		 width: 100%;
+		 background-color: teal;
+		 display: flex;
+		 flex-direction:flex-end;
+		 margin: 0 auto;
+		 
+		 text-align: center;
+		 justify-content: space-between;
+		 
+	 }
+	 
+	 .dropdown-container:hover .dropdown-content{
+		 display: block;
+		 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	 }
+	  @media screen  and (max-width:600px) {
+		body .dropdown{
+			  flex-direction: column;
+		  }
+		  .dropdown a{
+			  background-color: brown;
+			  margin: 5px 0px;
+			  padding: 10px;
+			  text-align: center;
+			  border-radius: 5px;
+			 
+		  }
+		  .dropdown-content {
+	 
+	position: absolute;
+	 
+	top: 70px;
+	 left: 65% ;
+	}
+	p{ 
+		color: white;
+	}
+	h1{
+		color: purple;
+	}	  
+	  }
+	  .btn{
+		  display: inline-block;
+		  height: 50px;
+		  background-color:teal;
+		  color:white;
+		  font-size: 30px;
+		  border: none;
+		  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  }
+	  .dropdown-container .btn:hover{
+		  background-color: brown;
+	  }
+	</style>
+</head>
+<body>
+	<header>
+		<h1>protisruti</h1>
+	 
+	<p><b> welcome to protisruti famaliy</b><br>
+	In middle of this crowdy small town we offer you a cordial home for living .You can find a very friendy environment to dwell.</p>
+	</header>
+	<div class="dropdown">
+		<div class="dropdown-container">
+			<button class="btn">HOME</button>
+		</div>
+	  
+			<div class="dropdown-container">
+				 <button class="btn">ABOUT</button>
+					 <div class="dropdown-content">
+						 <a href="11">PHOTO</a>
+						<a href="about.html">location</a>
+						<a href="11"> our members</a>
+						<a href="11">mission & vision </a>
+						 
+						 
+					 </div>
+					
+					 
+			</div>
+			<div class="dropdown-container">
+				<button class="btn">NEWS</button>
+					<div class="dropdown-content">
+						<a href="news.html"> NEWS</a>
+						<a href="11"> apartment for sale</a>
+					   
+					   <a href="11">apartment for rent</a>
+					  
+					   <a href="11"> shops</a>
+					   
+						
+						
+					</div>
+						
+						
+				 
+				   
+					
+		   </div>
+		   <div class="dropdown-container">
+			<button class="btn">CONTRACT</button>
+				<div class="dropdown-content">
+					<a href="contract.html"> contract</a>
+					</div>
+					</div>
+			 
+	</div>
+	
+</body>
+</html>
+
+
+
+ 
